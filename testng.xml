@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="methods" thread-count="2" >
-  <test name="Test" >
+<suite name="Suite">
+  <test thread-count="5" name="Test">
     <classes>
-      <class name="com.testcase.Test_regression"/>
+      <class name="com.Testcase.Test_regression"/>
+      <class name="com.Testcase.Showusernamepassword"/>
     </classes>
-      </test> <!-- Test -->
- <test name="Firefox">
- <parameter name="BrowserName" value="Firefox"/>
-    <classes>
-      <class name="com.testcase.Test_regression"/>
-        </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
